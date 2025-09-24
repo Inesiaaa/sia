@@ -1,0 +1,27 @@
+.container {
+    background-image: url('/assets/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .banner-content {
+        padding-top: 3rem;
+
+        h1 {
+            font-size: 54px;
+            margin-block-end: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+    }
+}
