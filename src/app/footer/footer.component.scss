@@ -1,0 +1,25 @@
+.container {
+    background-color: var(--primary-dark);
+    padding-block: 1rem;
+
+    .footer-content {
+        text-align: center;
+        color: var(--text-white);
+
+        p {
+            color: var(--text-white);
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        a {
+            color: var(--text-on-primary);
+            text-decoration: underline;
+            transition: color var(--transition-normal);
+
+            &:hover {
+                color: var(--primary-light);
+            }
+        }
+    }
+}
