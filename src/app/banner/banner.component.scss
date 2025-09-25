@@ -1,5 +1,4 @@
 .container {
-    background-image: url('/assets/banner-bg.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -9,19 +8,52 @@
     text-align: center;
 
     .banner-content {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-between;
         padding-top: 3rem;
 
-        h1 {
-            font-size: 54px;
-            margin-block-end: 0;
-            text-transform: uppercase;
-            letter-spacing: 3px;
+        @media (max-width: 768px) {
+            flex-direction: column;
         }
 
-        p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            color: var(--text-secondary);
+        .left-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .banner-illustration {
+                max-width: 100%;
+                height: auto;
+                transform: scaleX(-1);
+            }
+        }
+
+        .right-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: left;
+            
+            h1 {
+                font-size: 6rem;
+                margin-block-end: 0;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: var(--text-secondary);
+            }
+
+            @media (max-width: 768px) {
+                text-align: center;
+                align-items: center;
+            }
         }
     }
 }
