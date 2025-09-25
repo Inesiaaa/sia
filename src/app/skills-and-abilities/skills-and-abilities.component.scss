@@ -1,14 +1,11 @@
 .container {
+    background-color: var(--periwinkle-palette-50);
 
     .skills-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.5rem;
         grid-template-columns: repeat(2, 1fr);
-
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(1, 1fr);
-        }
 
         .skill-item {
             background-color: var(--background-card);

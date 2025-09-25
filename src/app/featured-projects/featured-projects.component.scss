@@ -4,10 +4,6 @@
         flex-direction: row;
         gap: 1.5rem;
 
-        @media (max-width: 768px) {
-            flex-direction: column;
-        }
-
         .project-image {
             flex: 1;
             width: auto;
