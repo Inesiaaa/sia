@@ -1,10 +1,9 @@
 .container {
+    background-color: var(--gray-background-light);
+
     .about-content {
         h2 {
             margin-bottom: 2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
         }
 
         p {
