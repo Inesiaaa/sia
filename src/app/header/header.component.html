@@ -5,15 +5,12 @@
                 <img src="assets/logo-white-dot.png" alt="Logo" class="logo">
             </a>
             <div class="nav-links">
-                <a [class.active]="isActive('home')" 
-                   href="#" 
-                   (click)="onNavClick('home', $event)">HOME</a>
                 <a [class.active]="isActive('about')" 
                    href="#about" 
                    (click)="onNavClick('about', $event)">ABOUT</a>
-                <a [class.active]="isActive('skills-and-abilities')" 
-                   href="#skills-and-abilities" 
-                   (click)="onNavClick('skills-and-abilities', $event)">SKILLS</a>
+                <a [class.active]="isActive('experiences')" 
+                   href="#experiences" 
+                   (click)="onNavClick('experiences', $event)">EXPERIENCES</a>
                 <a [class.active]="isActive('featured-projects')" 
                    href="#featured-projects" 
                    (click)="onNavClick('featured-projects', $event)">PROJECTS</a>

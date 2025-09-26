@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { AboutComponent } from './about/about.component';
-import { SkillsAndAbilitiesComponent } from './skills-and-abilities/skills-and-abilities.component';
+import { Experiences } from './experiences/experiences.component';
 import { FeaturedProjectsComponent } from './featured-projects/featured-projects.component';
 import { FooterComponent } from './footer/footer.component';
 @Component({
@@ -14,7 +14,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent, 
     BannerComponent,
     AboutComponent,
-    SkillsAndAbilitiesComponent,
+    Experiences,
     FeaturedProjectsComponent,
     FooterComponent
   ],

@@ -1,32 +1,41 @@
-.container {
+@import '../../styles/variables';
+
+.banner-container {
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0;
+    margin-inline: auto;
+    padding: 2rem 3rem;
+
+    @media (max-width: $breakpoint-tablet) {
+        padding: 0;
+    }
 
     .banner-content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 2rem;
         justify-content: space-between;
         padding-top: 3rem;
+        justify-content: center;
 
-        @media (max-width: 768px) {
+        @media (max-width: $breakpoint-tablet) {
             flex-direction: column;
+            padding-block-start: 7rem;
+            padding-block-end: 3rem;
         }
 
         .left-content {
             flex: 1;
             display: flex;
-            align-items: center;
-            justify-content: center;
 
             .banner-illustration {
-                max-width: 100%;
-                height: auto;
+                max-width: auto;
+                height: 200px;
                 transform: scaleX(-1);
             }
         }
@@ -35,22 +44,37 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            text-align: left;
+            align-items: center;
+            gap: 0.5rem;
             
             h1 {
-                font-size: 6rem;
+                font-weight: 200;
                 margin-block-end: 0;
                 text-transform: uppercase;
             }
 
             p {
-                font-size: 1.5rem;
                 color: var(--text-secondary);
+                margin-block-end: 0;
             }
 
-            @media (max-width: 768px) {
+            .social-icons {
+                display: flex;
+
+                a {
+                    color: var(--primary-color);
+                    font-size: 1.8rem;
+                    transition: color var(--transition-normal);
+
+                    &:hover {
+                        color: var(--primary-color);
+                        transform: translateY(-2px);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+
+            @media (max-width: $breakpoint-tablet) {
                 text-align: center;
                 align-items: center;
             }

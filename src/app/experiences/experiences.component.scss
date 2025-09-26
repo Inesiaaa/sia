@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.container {
+
+    .experiences-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .experience-item {
+            border-radius: 3px;
+            padding: 0.5rem;
+            margin-left: -0.5rem;
+            text-align: left;
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+
+            .date-range {
+                color: var(--text-light);
+                font-weight: 300;
+            }
+        }
+
+        .experiences-ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem; 
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-size: 12px;
+                font-weight: 800;
+                background-color: var(--primary-light);
+                color: var(--primary-dark);
+                margin-bottom: 0;
+                padding: 0.3rem 1rem 0.2rem 1rem;
+                border-radius: 50px;
+            }
+        }
+    }
+}
