@@ -1,0 +1,57 @@
+@import '../styles/variables';
+
+.main-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+
+    @media (max-width: $breakpoint-tablet) {
+        flex-direction: column;
+    }
+
+    .left-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--periwinkle-palette-100);
+        z-index: 1;
+
+        @media (max-width: $breakpoint-tablet) {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        // @include mobile-horizontal {
+        //     display: none;
+        // }
+
+        .banner-illustration {
+            max-width: 80%;
+            height: auto;
+            transform: scaleX(-1);
+        }
+    }
+
+    .right-content {
+        flex: 1;
+        margin-left: 40%;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        min-height: 100vh;
+        
+
+        @media (max-width: $breakpoint-tablet) {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+}

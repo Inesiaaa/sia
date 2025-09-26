@@ -10,12 +10,12 @@ import { CommonModule } from '@angular/common';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit, OnDestroy {
-  activeSection: string = 'home';
+  activeSection: string = 'about';
 
   constructor() {}
 
   ngOnInit(): void {
-    this.setActiveSection('home'); // Default to home
+    this.setActiveSection('about'); // Default to home
   }
 
   ngOnDestroy(): void {
@@ -36,7 +36,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   private updateActiveSection(): void {
-    const sections = ['home', 'about', 'skills-and-abilities', 'featured-projects'];
+    const sections = ['about', 'experiences', 'featured-projects'];
     const scrollPosition = window.scrollY + 100;
 
     for (const section of sections) {
@@ -53,7 +53,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
 
     if (window.scrollY < 100) {
-      this.activeSection = 'home';
+      this.activeSection = 'about';
     }
   }
 
@@ -61,7 +61,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     event.preventDefault();
     this.setActiveSection(section);
     
-    if (section === 'home') {
+    if (section === 'about') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       const element = document.getElementById(section);
