@@ -20,7 +20,7 @@
             }
         }
 
-        .experiences-ul {
+        ul.experiences-ul {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem; 
@@ -37,6 +37,41 @@
                 padding: 0.3rem 1rem 0.2rem 1rem;
                 border-radius: 50px;
             }
+        }
+    }
+
+    .highlight {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: normal;
+        line-height: 24px;
+
+        &:hover {
+        color: var(--primary-dark);
+        
+            .dot-icon {
+                background-color: var(--primary-dark);
+            }
+
+            .fa-arrow-up-right-from-square {
+                transform: translate(2px, -2px);
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        .fa-solid {
+            font-size: 12px;
+        }
+
+        .dot-icon {
+            width: 6px;
+            height: 6px;
+            background-color: var(--text-secondary);
+            border-radius: 50%;
+            display: inline-block;
         }
     }
 }

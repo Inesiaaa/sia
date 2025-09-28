@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   activeSection: string = 'about';
+  private readonly headerOffset = 50; // Increased to account for fixed navigation height
 
   constructor() {}
 
@@ -37,7 +38,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   private updateActiveSection(): void {
     const sections = ['about', 'experiences', 'featured-projects'];
-    const scrollPosition = window.scrollY + 100;
+    const scrollPosition = window.scrollY + this.headerOffset + 50;
 
     for (const section of sections) {
       const element = document.getElementById(section);
@@ -66,7 +67,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
     } else {
       const element = document.getElementById(section);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
       }
     }
   }

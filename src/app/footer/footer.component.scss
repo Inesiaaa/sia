@@ -1,13 +1,10 @@
 .container {
-    background-color: var(--primary-dark);
     padding-block: 1rem;
 
     .footer-content {
-        text-align: center;
-        color: var(--text-white);
+        text-align: left;
 
         p {
-            color: var(--text-white);
             margin: 0.5rem 0;
             font-size: 1rem;
         }
@@ -19,6 +16,20 @@
 
             &:hover {
                 color: var(--primary-light);
+            }
+        }
+
+        .highlight {
+            color: var(--text-color);
+            font-weight: 500;
+            line-height: 1.8;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        a.highlight {
+            &:hover {
+                color: var(--primary-dark)
             }
         }
     }
