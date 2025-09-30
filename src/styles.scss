@@ -40,7 +40,6 @@ section {
 .container {
   margin-inline: auto;
   padding: 2rem 3rem;
-  background-color: var(--periwinkle-palette-50);
 
   @media (min-width: $breakpoint-mobile) {
     padding: 2rem;
@@ -223,6 +222,7 @@ body { margin: 0; font-family: "Fustat", sans-serif; }
   display: inline-block;
   padding: 0.4rem 1.5rem 0.2rem 1.5rem;
   font-size: 1rem;
+  font-weight: 500;
   color: var(--button-text-color);
   background-color: var(--primary-color);
   border: none;

@@ -1,54 +1,54 @@
 :root {
-  /* Colors - Periwinkle Theme */
-  --primary-color: #C5C5FF;
-  --primary-dark: #9999FF;
-  --primary-light: #E6E6FF;
-  --secondary-color: #B19CD9;
-  --accent-color: #FFB3BA;
-  --accent-secondary: #FFDFBA;
-  --text-color: #4A4A4A;
-  --text-light: #7A7A7A;
-  --text-white: #FFFFFF;
-  --text-secondary: #666666; /* Added missing text-secondary */
-  --background-color: #FAFAFE;
-  --background-light: #F0F0FF;
-  --background-card: #FFFFFF;
-  --gray-background-light: #fafafd;
-  --gray-background: #e5e5ec;
-  --gray-background-dark: #ccccd6;
-  --border-color: #E0E0FF;
+  /* Base Periwinkle Palette */
+  --periwinkle-50: #f3f3ff;
+  --periwinkle-100: #e6e6ff;
+  --periwinkle-200: #d9d9ff;
+  --periwinkle-300: #c5c5ff;
+  --periwinkle-400: #b3b3ff;
+  --periwinkle-500: #9999ff;
+  --periwinkle-600: #8080ff;
+  --periwinkle-700: #6666ff;
+  --periwinkle-800: #4d4dff;
+  --periwinkle-900: #3333ff;
 
-  --periwinkle-palette-50: #f3f3ff;
-  --periwinkle-palette-100: #e6e6ff;
-  --periwinkle-palette-200: #d9d9ff;
-  --periwinkle-palette-300: #c5c5ff;
-  --periwinkle-palette-400: #b3b3ff;
-  --periwinkle-palette-500: #9999ff;
-  
-  /* Typography - Proper Scale */
-  --font-size-xs: 0.75rem;     /* 12px */
-  --font-size-sm: 0.875rem;    /* 14px */
-  --font-size-base: 1rem;      /* 16px - base */
-  --font-size-lg: 1.125rem;    /* 18px */
-  --font-size-xl: 1.25rem;     /* 20px */
-  --font-size-2xl: 1.5rem;     /* 24px */
-  --font-size-3xl: 1.875rem;   /* 30px */
-  --font-size-4xl: 2.25rem;    /* 36px */
-  --font-size-5xl: 3rem;       /* 48px */
-  --font-size-6xl: 3.75rem;    /* 60px */
-  --font-size-7xl: 4.5rem;     /* 72px */
-  
-  /* Heading specific sizes */
-  --h1-size: var(--font-size-7xl);    /* 72px */
-  --h2-size: var(--font-size-6xl);    /* 60px */
-  --h3-size: var(--font-size-5xl);    /* 48px */
-  --h4-size: var(--font-size-4xl);    /* 36px */
-  --h5-size: var(--font-size-3xl);     /* 30px */
-  --h6-size: var(--font-size-2xl);     /* 24px */
+  /* Accent Colors */
+  --accent-pink: #FFB3BA;
+  --accent-orange: #FFDFBA;
+  --accent-purple: #B19CD9;
 
-  /* Button colors */
-  --button-text-color: var(--text-white);
-  
+  /* Neutral Grays */
+  --gray-50: #fafafd;
+  --gray-100: #f5f5f8;
+  --gray-200: #e5e5ec;
+  --gray-300: #d1d1db;
+  --gray-400: #b8b8c7;
+  --gray-500: #9999a8;
+  --gray-600: #7a7a89;
+  --gray-700: #5c5c6b;
+  --gray-800: #3d3d4d;
+  --gray-900: #1f1f2e;
+
+  /* Typography Scale */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+  --font-size-7xl: 4.5rem;
+
+  /* Heading Sizes */
+  --h1-size: var(--font-size-7xl);
+  --h2-size: var(--font-size-6xl);
+  --h3-size: var(--font-size-5xl);
+  --h4-size: var(--font-size-4xl);
+  --h5-size: var(--font-size-3xl);
+  --h6-size: var(--font-size-2xl);
+
   /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -56,36 +56,134 @@
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
   --spacing-xxl: 3rem;
-  
+
   /* Layout */
   --container-max-width: 1200px;
   --container-spacing: 2rem;
   --border-radius: 50px;
   --border-radius-lg: 16px;
   --border-radius-xl: 24px;
-  --box-shadow: 0 2px 8px rgba(197, 197, 255, 0.15);
-  --box-shadow-lg: 0 4px 16px rgba(197, 197, 255, 0.2);
-  --box-shadow-hover: 0 8px 24px rgba(197, 197, 255, 0.25);
-  
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-  --gradient-accent: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-secondary) 100%);
-  --gradient-background: linear-gradient(180deg, var(--background-color) 0%, var(--background-light) 100%);
-  
+
   /* Transitions */
   --transition-fast: 0.15s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
 
+  /* Content Widths */
   --content-max-width: 700px;
   --content-max-width-wide: 900px;
   --content-max-width-full: 1200px;
+}
 
-  --breakpoint-xs: 480px;
-  --breakpoint-sm: 600px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1200px;
+/* LIGHT THEME (Default) */
+:root,
+[data-theme="light"] {
+  /* Primary Colors */
+  --primary-color: var(--periwinkle-300);
+  --primary-dark: var(--periwinkle-500);
+  --primary-light: var(--periwinkle-100);
+  --secondary-color: var(--accent-purple);
+  --accent-color: var(--accent-pink);
+  --accent-secondary: var(--accent-orange);
+
+  /* Text Colors */
+  --text-color: var(--gray-800);
+  --text-light: var(--gray-600);
+  --text-secondary: var(--gray-700);
+  --text-white: #ffffff;
+  --text-muted: var(--gray-500);
+
+  /* Background Colors */
+  --background-color: var(--periwinkle-palette-100);
+  --background-light: var(--periwinkle-50);
+  --background-card: #ffffff;
+  --background-secondary: var(--periwinkle-100);
+  --gray-background-light: var(--gray-50);
+  --gray-background: var(--gray-200);
+  --gray-background-dark: var(--gray-300);
+
+  /* Border Colors */
+  --border-color: var(--periwinkle-200);
+  --border-light: var(--gray-200);
+  --border-dark: var(--gray-300);
+
+  /* Button Colors */
+  --button-text-color: var(--text-white);
+  --button-bg-primary: var(--primary-color);
+  --button-bg-secondary: var(--gray-600);
+
+  /* Shadows */
+  --box-shadow: 0 2px 8px rgba(197, 197, 255, 0.15);
+  --box-shadow-lg: 0 4px 16px rgba(197, 197, 255, 0.2);
+  --box-shadow-hover: 0 8px 24px rgba(197, 197, 255, 0.25);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-secondary) 100%);
+  --gradient-background: linear-gradient(180deg, var(--background-color) 0%, var(--background-light) 100%);
+
+  /* Periwinkle Palette */
+  --periwinkle-palette-50: var(--periwinkle-50);
+  --periwinkle-palette-100: var(--periwinkle-100);
+  --periwinkle-palette-200: var(--periwinkle-200);
+  --periwinkle-palette-300: var(--periwinkle-300);
+  --periwinkle-palette-400: var(--periwinkle-400);
+  --periwinkle-palette-500: var(--periwinkle-500);
+}
+
+/* DARK THEME */
+[data-theme="dark"] {
+  /* Primary Colors */
+  --primary-color: var(--periwinkle-500);
+  --primary-dark: var(--periwinkle-600);
+  --primary-light: var(--periwinkle-800);
+  --secondary-color: #9580B8;
+  --accent-color: #FF9CA3;
+  --accent-secondary: #FFCC9A;
+
+  /* Text Colors */
+  --text-color: var(--gray-100);
+  --text-light: var(--gray-300);
+  --text-secondary: var(--gray-200);
+  --text-white: #ffffff;
+  --text-muted: var(--gray-400);
+
+  /* Background Colors */
+  --background-color: var(--gray-900);
+  --background-light: var(--gray-800);
+  --background-card: var(--gray-800);
+  --background-secondary: var(--gray-700);
+  --gray-background-light: var(--gray-800);
+  --gray-background: var(--gray-700);
+  --gray-background-dark: var(--gray-600);
+
+  /* Border Colors */
+  --border-color: var(--gray-700);
+  --border-light: var(--gray-600);
+  --border-dark: var(--gray-500);
+
+  /* Button Colors */
+  --button-text-color: var(--gray-900);
+  --button-bg-primary: var(--primary-color);
+  --button-bg-secondary: var(--gray-600);
+
+  /* Shadows */
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --box-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --box-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.5);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-secondary) 100%);
+  --gradient-background: linear-gradient(180deg, var(--background-color) 0%, var(--background-light) 100%);
+
+  /* Periwinkle Palette - Adjusted for dark theme */
+  --periwinkle-palette-50: var(--periwinkle-800);
+  --periwinkle-palette-100: var(--periwinkle-700);
+  --periwinkle-palette-200: var(--periwinkle-600);
+  --periwinkle-palette-300: var(--periwinkle-500);
+  --periwinkle-palette-400: var(--periwinkle-400);
+  --periwinkle-palette-500: var(--periwinkle-300);
 }
 
 // Breakpoints
@@ -97,3 +195,64 @@ $breakpoint-tablet-horizontal: 1024px;
 $breakpoint-desktop: 1280px;
 $breakpoint-desktop-large: 1440px;
 $breakpoint-desktop-xl: 1920px;
+
+// Media Query Mixins
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile-horizontal - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile-horizontal {
+  @media (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-tablet-horizontal - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-horizontal {
+  @media (min-width: #{$breakpoint-tablet-horizontal}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: #{$breakpoint-desktop-large}) {
+    @content;
+  }
+}
+
+@mixin desktop-xl {
+  @media (min-width: #{$breakpoint-desktop-xl}) {
+    @content;
+  }
+}
+
+@mixin max-width($width) {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin min-width($width) {
+  @media (min-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin between($min-width, $max-width) {
+  @media (min-width: #{$min-width}) and (max-width: #{$max-width}) {
+    @content;
+  }
+}
