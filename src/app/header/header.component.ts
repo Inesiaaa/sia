@@ -12,15 +12,40 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent implements OnInit, OnDestroy {
   activeSection: string = 'about';
   private readonly headerOffset = 50; // Increased to account for fixed navigation height
+  isDarkMode = false;
 
   constructor() {}
 
   ngOnInit(): void {
     this.setActiveSection('about'); // Default to home
+    this.initializeTheme();
   }
 
   ngOnDestroy(): void {
     
+  }
+
+  private initializeTheme(): void {
+    // Check for saved theme preference or default to light
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    this.isDarkMode = savedTheme === 'dark';
+    this.setTheme(savedTheme as 'light' | 'dark');
+  }
+
+  toggleTheme(): void {
+    this.isDarkMode = !this.isDarkMode;
+    const newTheme = this.isDarkMode ? 'dark' : 'light';
+    this.setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+
+  private setTheme(theme: 'light' | 'dark'): void {
+    const mainContent = document.getElementById('main-content');
+    if (mainContent) {
+      mainContent.setAttribute('data-theme', theme);
+    }
+    // Also set on document root for global access
+    document.documentElement.setAttribute('data-theme', theme);
   }
 
   setActiveSection(section: string): void {
