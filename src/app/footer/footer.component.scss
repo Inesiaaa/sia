@@ -1,5 +1,6 @@
 .container {
     padding-block: 1rem;
+    position: relative;
 
     .footer-content {
         text-align: left;
@@ -32,5 +33,14 @@
                 color: var(--primary-dark)
             }
         }
+    }
+
+    .hearts {
+        background-color: var(--primary-color);
+        padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+        border-top-left-radius: 10px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 }
